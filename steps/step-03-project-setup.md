@@ -13,12 +13,12 @@ You have a clear plan. Now it's time to set up your development environment. Thi
 Copy this prompt into your AI agent:
 
 ```
-Set up the dashboard project structure inside the app/ folder and get the app running.
+Set up the dashboard project structure inside the app/ folder and get the app running NOW.
 
 Context:
 - I'm working in a workshop repository with an app/ folder for development
 - All dashboard files should be created inside the app/ directory
-- I want to get a basic Dash app running that will auto-reload when I make changes
+- I MUST have a working Dash app running in my browser by the end of this step
 
 Required Dependencies:
 - dash (for web framework)
@@ -26,21 +26,20 @@ Required Dependencies:
 - pandas (for data manipulation)
 - numpy (for numerical operations)
 
-Tasks:
-1. Set up a Python virtual environment in the main directory (not inside app/)
+CRITICAL REQUIREMENTS - YOU MUST COMPLETE ALL OF THESE:
+1. Create a Python virtual environment and activate it
 2. Create app/requirements.txt with the specified dependencies
-3. Create app/app.py with a basic Dash setup that includes debug=True for auto-reload
-4. Provide instructions to activate the virtual environment and install dependencies
-5. Make sure the app runs and auto-reloads when files change
+3. Install all dependencies using pip
+4. Create app/app.py with a basic Dash application that includes debug=True
+5. ACTUALLY RUN the application using python app/app.py
+6. VERIFY the app is accessible at localhost:8050 in the browser
+7. CONFIRM the app shows a basic "Hello World" or dashboard title
+8. ENSURE the app stays running for future development steps
 
-The goal is to have a running Dash app that automatically refreshes when you make changes to the code.
+MANDATORY: The app MUST be running and accessible before you mark this step complete. Test it in your browser. Do not proceed to any other step until you can successfully view the running Dash application.
 
 Documentation:
-Update the CHANGELOG.md file to track this step. Include:
-- Virtual environment and dependencies setup
-- Basic running app created
-- Auto-reload functionality enabled
-- Next steps planned
+Update CHANGELOG.md to confirm the app is running and accessible at localhost:8050.
 ```
 
 ## Expected Result
