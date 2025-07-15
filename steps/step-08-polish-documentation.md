@@ -15,6 +15,11 @@ Copy this prompt into your AI agent:
 ```
 Add final touches to make the dashboard professional and user-friendly.
 
+Context:
+- I have a complete stock dashboard with charts, moving averages, date filtering, and statistics
+- I want to polish the interface and add documentation
+- The goal is a professional-looking dashboard ready for demonstration
+
 Visual Improvements Needed:
 - Clean, professional styling and layout
 - Proper titles and labels for all components
@@ -56,6 +61,16 @@ Required Information:
 5. How to interpret the results
 
 Keep documentation practical and focused on getting the dashboard running. The goal is to help someone else quickly understand and use the project.
+
+Documentation:
+Update the CHANGELOG.md file to track this final step. Include:
+- What was accomplished (final polish and documentation)
+- Visual improvements made
+- Documentation created
+- Overall project completion status
+- Summary of the complete dashboard functionality
+
+This provides a complete record of the development process.
 ```
 
 ## Expected Result

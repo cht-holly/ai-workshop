@@ -133,6 +133,35 @@ Interactive stock price dashboard with:
 3. **Verification is crucial**: Always test what AI produces
 4. **Context matters**: Build understanding progressively
 5. **Documentation enables sharing**: Others can build on your work
+6. **Maintain development context**: CHANGELOG.md helps track progress and decisions
+
+## The CHANGELOG.md Strategy
+
+### Why It Matters
+Each step includes instructions for the AI to update a CHANGELOG.md file. This serves multiple purposes:
+
+**For the AI Agent:**
+- Maintains context across conversation sessions
+- Tracks what's been accomplished and what's next
+- Provides reference for decision-making
+- Helps avoid repeating work or missing steps
+
+**For the Developer:**
+- Creates a development log of progress
+- Documents technical decisions and approaches
+- Provides easy reference for troubleshooting
+- Enables others to understand the development process
+
+**For the Workshop:**
+- Demonstrates good development practices
+- Shows how to maintain context with AI
+- Creates a sharable record of the learning process
+
+### Teaching Points
+- **Emphasize consistency**: Every step updates the changelog
+- **Show the value**: Reference previous changelog entries when troubleshooting
+- **Demonstrate context building**: Show how AI uses changelog for better responses
+- **Highlight documentation**: Good developers document their work
 
 ## Workshop Wrap-Up (5 minutes)
 

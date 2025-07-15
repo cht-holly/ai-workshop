@@ -15,6 +15,11 @@ Copy this prompt into your AI agent:
 ```
 Build the foundation of the dashboard with core functionality.
 
+Context:
+- I'm working in the app/ folder for all dashboard development
+- I have a data loading function from Step 4
+- All dashboard code should be created inside the app/ folder
+
 Required Features:
 - Stock selection dropdown with all 4 tickers (NVDA, AAPL, GOOGL, MSFT)
 - Line chart displaying stock price over time
@@ -32,8 +37,18 @@ Technical Requirements:
 - Chart displays Date on x-axis and Close price on y-axis
 - Data filtering happens reactively based on user selection
 - Use the data loading function from Step 4
+- Update the app/app.py file with the dashboard functionality
 
 Create a working dashboard that demonstrates the core interaction between user input and data visualization. Keep the interface clean and focused on essential functionality.
+
+Documentation:
+Update the CHANGELOG.md file to track this step. Include:
+- What was accomplished (basic interactive dashboard)
+- Features implemented (dropdown, chart, interactivity)
+- Files created or modified
+- Current functionality status
+
+This helps maintain context about the dashboard's evolution.
 ```
 
 ## Expected Result

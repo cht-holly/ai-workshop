@@ -15,25 +15,23 @@ Copy this prompt into your AI agent:
 ```
 Create data loading functionality for the equity_prices.csv file.
 
+Context:
+- I'm working in the app/ folder for all dashboard development
+- The data file is located at ../sample-data/equity_prices.csv (relative to the app/ folder)
+- All code should be created inside the app/ folder
+
 Data Structure:
 - CSV contains Date, Ticker, Close columns  
 - Tickers are: NVDA, AAPL, GOOGL, MSFT
 - Dates should be chronological
 - Close prices are positive numbers
 
-Requirements:
-- Load CSV data into pandas DataFrame
-- Ensure dates are properly formatted for visualization
-- Prepare data for dashboard consumption
-- Display basic data summary for verification
-
 Implementation Tasks:
-1. Create data loading function that reads the CSV file
-2. Convert date strings to proper datetime format
-3. Ensure data is sorted chronologically
-4. Display summary information (data shape, date range, sample rows)
-
-Note: Use the sample data file provided in the workshop: sample-data/equity_prices.csv
+1. Create a data loading function inside the app/ folder (e.g., in app/data_loader.py)
+2. Function should read ../sample-data/equity_prices.csv
+3. Convert date strings to proper datetime format
+4. Ensure data is sorted chronologically
+5. Display summary information (data shape, date range, sample rows)
 
 The data loading should be robust and provide clear feedback about what was loaded.
 ```
@@ -41,10 +39,10 @@ The data loading should be robust and provide clear feedback about what was load
 ## Expected Result
 
 You should have:
+- **app/data_loader.py**: Module with data loading function
 - **Data loading function**: Reads CSV and returns clean DataFrame
 - **Date formatting**: Proper datetime objects for plotting
 - **Data summary**: Information about what was loaded
-- **Verification output**: Sample rows and basic statistics
 
 ## Verification
 

@@ -31,11 +31,12 @@ An interactive dashboard featuring:
 ## How to Use This Workshop
 
 ### For Self-Guided Learning:
-1. Start with `steps/step-01-user-stories.md`
-2. Follow each step in sequence (01 → 08)
+1. Start with `steps/step-00-setup.md`
+2. Follow each step in sequence (00 → 08)
 3. Copy prompts into your AI agent
 4. Build incrementally, verifying each step
 5. Compare your results with expected outcomes
+6. The AI will maintain a CHANGELOG.md to track progress
 
 ### For Facilitators:
 1. Review `workshop-materials/FACILITATOR_GUIDE.md`
@@ -43,6 +44,9 @@ An interactive dashboard featuring:
 3. Each step includes: Context → Prompt → Expected Result → Verification
 
 ### Workshop Structure:
+
+**Step 0: Setup (2 min)**
+- Create app/ folder for development
 
 **Steps 1-2: Planning Phase (15 min)**
 - Define user stories and requirements

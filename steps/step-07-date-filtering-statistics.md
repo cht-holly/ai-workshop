@@ -15,6 +15,11 @@ Copy this prompt into your AI agent:
 ```
 Add date range filtering functionality to the dashboard.
 
+Context:
+- I'm working on my stock dashboard with price charts and moving averages
+- I want to add the ability to filter data by date range
+- This will allow users to focus on specific time periods
+
 Filtering Requirements:
 - Allow users to select a specific date range for analysis
 - Both the price chart and moving average should update based on selected date range
@@ -40,6 +45,11 @@ After implementing date filtering, use this prompt:
 
 ```
 Add a summary statistics panel to provide key insights about the selected stock and time period.
+
+Context:
+- I have a dashboard with stock charts, moving averages, and date filtering
+- I want to add a statistics panel that shows key performance metrics
+- The statistics should update based on the selected stock and date range
 
 Required Statistics:
 - Total return percentage for the selected period

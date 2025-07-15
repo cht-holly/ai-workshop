@@ -15,6 +15,11 @@ Copy this prompt into your AI agent:
 ```
 Add 7-day simple moving average functionality to the dashboard.
 
+Context:
+- I'm working on my stock dashboard in the app/ folder
+- I have a basic dashboard with stock selection and price charts
+- Now I want to add moving average analysis
+
 Moving Average Requirements:
 - Calculate 7-day SMA using pandas rolling(window=7).mean() method
 - Display both original price and SMA on the same chart
@@ -32,9 +37,18 @@ Technical Implementation:
 - Both lines share the same x-axis (Date) and y-axis (Price)
 - Update existing chart to display both datasets
 - Handle the moving average calculation for the selected stock
-- Ensure proper handling of initial 6 days where full window isn't available (now you have enough data to see the full effect)
+- Ensure proper handling of initial 6 days where full window isn't available
 
 The result should clearly demonstrate how the moving average smooths the price data and makes underlying trends more visible.
+
+Documentation:
+Update the CHANGELOG.md file to track this step. Include:
+- What was accomplished (7-day moving average implementation)
+- Technical approach used (pandas rolling window)
+- Visual improvements (dual-line chart with legend)
+- Files modified
+
+This helps track the analytical capabilities being added.
 ```
 
 ## Expected Result

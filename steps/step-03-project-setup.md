@@ -13,7 +13,12 @@ You have a clear plan. Now it's time to set up your development environment. Thi
 Copy this prompt into your AI agent:
 
 ```
-Set up the project environment for our stock dashboard.
+Set up the dashboard project structure inside the app/ folder.
+
+Context:
+- I'm working in a workshop repository with an app/ folder for development
+- All dashboard files should be created inside the app/ directory
+- The app/ folder already exists and is ready for development
 
 Required Dependencies:
 - dash (for web framework)
@@ -21,43 +26,46 @@ Required Dependencies:
 - pandas (for data manipulation)
 - numpy (for numerical operations)
 
-Project Requirements:
-- Clean, organized project structure suitable for dashboard development
-- All necessary dependencies available for development
-- Basic application entry point ready for development
-- Proper directory structure for components and utilities
-
 Tasks:
-1. Create a logical project directory structure
-2. Generate requirements.txt with the specified dependencies
-3. Create main application file with basic Dash setup
-4. Set up any necessary utility and component directories
+1. Create a main application file (app.py) inside the app/ folder with basic Dash setup
+2. Create a requirements.txt file inside the app/ folder with the specified dependencies
+3. Set up any necessary subdirectories inside app/ for organization (components, utils, etc.)
+4. Ensure the basic Dash application can run successfully
 
-The result should be a project ready for immediate dashboard development.
+Focus on creating a clean foundation inside the app/ folder that's ready for dashboard development.
+
+Documentation:
+Update the CHANGELOG.md file to track this step. Include:
+- What was accomplished (project structure setup)
+- Files created or modified (app.py, requirements.txt, etc.)
+- Dependencies installed
+- Next steps planned
+
+This helps maintain context and progress throughout the workshop.
 ```
 
 ## Expected Result
 
 You should have:
-- **Project structure**: Organized directories for code, data, tests
-- **requirements.txt**: With dash, plotly, pandas, numpy dependencies
-- **app.py**: Basic Dash application setup
-- **Supporting directories**: For components, utilities, etc.
+- **app/app.py**: Main Dash application file
+- **app/requirements.txt**: With dash, plotly, pandas, numpy dependencies  
+- **app/ subdirectories**: For components, utilities, etc.
+- **Working application**: Basic Dash app that can run
 
 ## Verification
 
 ✅ **Check your results:**
-- Is there a clear project directory structure?
-- Does requirements.txt include all required dependencies?
-- Is there a main app.py file with basic Dash setup?
-- Are there directories for organizing code (components, utils, etc.)?
-- Can you run `pip install -r requirements.txt` successfully?
+- Is there an app/app.py file with basic Dash setup?
+- Is there an app/requirements.txt with all required dependencies?
+- Are there subdirectories inside app/ for organizing code?
+- Can you run `pip install -r app/requirements.txt` successfully?
+- Does the basic Dash app start when you run `python app/app.py`?
 
 ## Implementation Steps
 
-1. **Create the project structure** as suggested by your AI agent
-2. **Install dependencies**: Run `pip install -r requirements.txt`
-3. **Test basic setup**: Run the app.py file to ensure Dash starts correctly
+1. **Create the app structure** as suggested by your AI agent (inside the app/ folder)
+2. **Install dependencies**: Run `pip install -r app/requirements.txt`
+3. **Test basic setup**: Run `python app/app.py` to ensure Dash starts correctly
 4. **Verify**: Check that you can access the basic dashboard in your browser
 
 ## Next Step
