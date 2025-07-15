@@ -13,12 +13,12 @@ You have a clear plan. Now it's time to set up your development environment. Thi
 Copy this prompt into your AI agent:
 
 ```
-Set up the dashboard project structure inside the app/ folder.
+Set up the dashboard project structure inside the app/ folder and get the app running.
 
 Context:
 - I'm working in a workshop repository with an app/ folder for development
 - All dashboard files should be created inside the app/ directory
-- The app/ folder already exists and is ready for development
+- I want to get a basic Dash app running that will auto-reload when I make changes
 
 Required Dependencies:
 - dash (for web framework)
@@ -27,46 +27,47 @@ Required Dependencies:
 - numpy (for numerical operations)
 
 Tasks:
-1. Create a main application file (app.py) inside the app/ folder with basic Dash setup
-2. Create a requirements.txt file inside the app/ folder with the specified dependencies
-3. Set up any necessary subdirectories inside app/ for organization (components, utils, etc.)
-4. Ensure the basic Dash application can run successfully
+1. Set up a Python virtual environment in the main directory (not inside app/)
+2. Create app/requirements.txt with the specified dependencies
+3. Create app/app.py with a basic Dash setup that includes debug=True for auto-reload
+4. Provide instructions to activate the virtual environment and install dependencies
+5. Make sure the app runs and auto-reloads when files change
 
-Focus on creating a clean foundation inside the app/ folder that's ready for dashboard development.
+The goal is to have a running Dash app that automatically refreshes when you make changes to the code.
 
 Documentation:
 Update the CHANGELOG.md file to track this step. Include:
-- What was accomplished (project structure setup)
-- Files created or modified (app.py, requirements.txt, etc.)
-- Dependencies installed
+- Virtual environment and dependencies setup
+- Basic running app created
+- Auto-reload functionality enabled
 - Next steps planned
-
-This helps maintain context and progress throughout the workshop.
 ```
 
 ## Expected Result
 
 You should have:
-- **app/app.py**: Main Dash application file
+- **Virtual environment**: Activated Python environment
+- **app/app.py**: Main Dash application file with debug=True
 - **app/requirements.txt**: With dash, plotly, pandas, numpy dependencies  
-- **app/ subdirectories**: For components, utilities, etc.
-- **Working application**: Basic Dash app that can run
+- **Running application**: Basic Dash app at localhost:8050 with auto-reload
 
 ## Verification
 
 ✅ **Check your results:**
-- Is there an app/app.py file with basic Dash setup?
+- Is the virtual environment activated?
+- Is there an app/app.py file with basic Dash setup and debug=True?
 - Is there an app/requirements.txt with all required dependencies?
-- Are there subdirectories inside app/ for organizing code?
 - Can you run `pip install -r app/requirements.txt` successfully?
-- Does the basic Dash app start when you run `python app/app.py`?
+- Does the app start and show "Hello World" at localhost:8050?
+- Does the app auto-reload when you make changes to app/app.py?
 
 ## Implementation Steps
 
-1. **Create the app structure** as suggested by your AI agent (inside the app/ folder)
-2. **Install dependencies**: Run `pip install -r app/requirements.txt`
-3. **Test basic setup**: Run `python app/app.py` to ensure Dash starts correctly
-4. **Verify**: Check that you can access the basic dashboard in your browser
+1. **Set up virtual environment** as suggested by your AI agent
+2. **Activate the environment** and install dependencies with `pip install -r app/requirements.txt`
+3. **Start the app**: Run `python app/app.py` 
+4. **Verify auto-reload**: Open localhost:8050, then modify app/app.py and save to see if it refreshes
+5. **Keep it running**: Leave the app running for the remaining steps
 
 ## Next Step
 
